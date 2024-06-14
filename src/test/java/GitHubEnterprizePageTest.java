@@ -16,7 +16,7 @@ public class GitHubEnterprizePageTest {
     }
 
     @Test
-    void searchPageOnGithub() {
+    void searchPageOnGithubTest() {
         open("https://github.com/");
         $$("li.HeaderMenu-item button").find(text("Solutions")).hover();
         $$("a.HeaderMenu-dropdown-link").find(href("https://github.com/enterprise")).click();
